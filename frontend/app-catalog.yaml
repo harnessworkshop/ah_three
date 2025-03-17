@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ahutson_frontend
+  description: This is an example repo for IDP 3 tier web app
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: harnessworkshop/ah_three
+    #harness.io/pipelines: |
+    #  build and deploy: TBD
+  tags:
+    - ahutson
+    - frontend
+spec:
+  type: service
+  owner: ashley.hutson@mheducation.com
+  lifecycle: experimental
+  consumesApis:
+    - spotify
+#  dependsOn:
+#    - component:default/yournamehere_backend

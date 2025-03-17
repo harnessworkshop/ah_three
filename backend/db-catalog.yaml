@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ahutson_db
+  description: This is an example repo for IDP 3 tier web app
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: harnessworkshop/ah_three
+    #harness.io/pipelines: |
+    #  infra provisioning: TBD
+  tags:
+    - ahutson
+    - db
+spec:
+  type: service
+  owner: ashley.hutson@mheducation.com
+  lifecycle: experimental
+#  dependsOn:
+#    - component:default/yournamehere-service
